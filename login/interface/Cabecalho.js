@@ -5,10 +5,8 @@ let btnFechar = document.querySelector('.btn-fechar')
 
 lupa.addEventListener('click', ()=> {
     boxBuscar.classList.add('ativar')
-    localStorage.setItem('pesquisa', 'sim')
 })
 
 btnFechar.addEventListener('click', ()=> {
     boxBuscar.classList.remove('ativar')
-    localStorage.setItem('pesquisa', 'não')
 })

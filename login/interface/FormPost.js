@@ -1,3 +1,5 @@
+
+
 class FormPost {
   constructor(idForm, idTextarea, ListPost) {
     this.form = document.getElementById(idForm);

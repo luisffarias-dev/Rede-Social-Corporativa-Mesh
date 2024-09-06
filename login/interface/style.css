@@ -5,6 +5,7 @@
   
 }
 
+
 body {
   background: #fbfbfb;
   font-family: 'Roboto', sans-serif;
@@ -229,3 +230,4 @@ ul.posts li.post div.actionBtnPost button.filesPost img {
   max-width: 650px;
   border-radius: 20px;
 }
+

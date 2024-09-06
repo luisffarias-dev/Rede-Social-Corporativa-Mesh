@@ -8,15 +8,21 @@
 
 body {
     height: 100vh;
+    color: #e6f3ff;
+}
+
+header{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     background-color: #133b61;
     flex-direction: row;
     position: relative;
+    color: #e6f3ff;
+
 }
 
-h1 {
+#mesh {
     color: #e6f3ff;
     padding: 10px;
     font-size: 40px;
