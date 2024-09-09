@@ -1,3 +1,5 @@
+*{margin: 0;}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,15 +8,12 @@ body {
     color: #092844;
 }
 
-header {
+#head{
     background: linear-gradient(90deg,#092844, #4c85b8);
     color: #ffffff;
     padding: 10px 0;
+    padding-left: 15px;
     text-align: left;
-}
-
-header h1 {
-    margin: 20px;
 }
 
 nav ul {
@@ -45,4 +44,79 @@ h2 {
     color: #333;
     border-bottom: 2px solid #f4f4f4;
     padding-bottom: 10px;
+}
+
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #133b61;
+    flex-direction: row;
+    position: relative;
+    color: #e6f3ff;
+
+}
+
+#mesh {
+    margin: 0;
+    padding: 0;
+    color: #e6f3ff;
+    padding: 10px;
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.buscar-box {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: .5s;
+}
+
+.buscar-box.ativar {
+    width: 400px;
+}
+
+.buscar-box .lupa-buscar,
+.buscar-box .btn-fechar {
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buscar-box .btn-fechar i {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.buscar-box .lupa-buscar i {
+    font-size: 25px;
+}
+
+.buscar-box .input-buscar {
+    position: absolute;
+    left: 80px;
+    width: calc(100% - 120px);
+    height: 100%;
+    line-height: 60px;
+}
+
+.buscar-box .input-buscar input {
+    border-radius: 30px;
+    padding: 8px;
+    background-color: #e6f3ff;
+    border: 2px;
+    outline: 0;
+    font-size: 20px;
+    color: #133b61;
 }

@@ -25,7 +25,7 @@ function submitForm(e) {
   e.preventDefault();
 
   // Verificação se todos os campos obrigatórios estão preenchidos
-  const inputs = document.querySelectorAll('.input');
+  const inputs = document.querySelectorAll('.input_obg');
   let formIsValid = true;
 
   inputs.forEach(input => {
@@ -39,7 +39,6 @@ function submitForm(e) {
 
   if (formIsValid) {
     // Se o formulário for válido, fazer o envio do formulário
-    console.log('Formulário válido. Dados enviados!');
     alert('Dados enviados com sucesso!')
     // Armazenar valores no sessionStorage
     inputs.forEach(input => {
@@ -51,9 +50,10 @@ function submitForm(e) {
     sessionStorage.setItem('estado', estadoSelect.value);
 
     // Aqui você pode adicionar a lógica para enviar os dados do formulário
+    window.location="mainperfil.html"
 
   } else {
-    console.log('Por favor, preencha todos os campos obrigatórios.');
+    alert('Por favor, preencha todos os campos obrigatórios.');
   }
 }
 
@@ -87,3 +87,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     img.setAttribute('src', savedImage);
   }
 });
+
+let boxBuscar = document.querySelector('.buscar-box')
+let lupa = document.querySelector('.lupa-buscar')
+let btnFechar = document.querySelector('.btn-fechar')
+
+
+lupa.addEventListener('click', ()=> {
+    boxBuscar.classList.add('ativar')
+})
+
+btnFechar.addEventListener('click', ()=> {
+    boxBuscar.classList.remove('ativar')
+})
