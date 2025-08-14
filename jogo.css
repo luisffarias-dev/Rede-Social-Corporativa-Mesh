@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #3c5c7a, #224363, #133b61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f9fafa;
+}
+
+.container {
+    background: linear-gradient(to right, #383d41, #181b1d, #000000);
+    padding: 50px; /* Diminuído de 70px para 50px */
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px; /* Diminuído de 56px para 48px */
+    font-weight: 700;
+    color: #f7f7f7;
+    margin-bottom: 30px; /* Diminuído de 40px para 30px */
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /* Diminuído de 30px para 20px */
+}
+
+.header-links .link {
+    text-decoration: none;
+    font-size: 20px; /* Diminuído de 24px para 20px */
+    color: #fafafa;
+    font-weight: 600;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px; /* Diminuído de 40px para 30px */
+}
+
+.icon {
+    font-size: 60px; /* Diminuído de 66px para 60px */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+    color: #fafafa;
+}
+
+.icon:hover {
+    color: #003c8f;
+}
+
+.icon-container {
+    text-align: center;
+}
+
+.icon-container span {
+    display: block;
+    font-size: 20px; /* Diminuído de 22px para 20px */
+    color: #ffffff;
+    margin-top: 8px; /* Diminuído de 10px para 8px */
+}
+
+.btn {
+    width: 100%;
+    background: linear-gradient(to right, #000000, #181b1d, #383d41);
+    color: white;
+    padding: 20px; /* Diminuído de 25px para 20px */
+    font-size: 22px; /* Diminuído de 24px para 22px */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #50a7e9, #303f9f);
+    transform: scale(1.1); /* Diminuído de 1.15 para 1.1 */
+}
+
+.resultado {
+    margin-top: 30px; /* Diminuído de 40px para 30px */
+    padding: 20px; /* Diminuído de 25px para 20px */
+    background: linear-gradient(to right, #383d41, #181b1d, #000000);
+    border-radius: 15px;
+    border: 1px solid #00bcd4;
+    color: #003c8f;
+    font-size: 22px; /* Diminuído de 24px para 22px */
+}
+
+.resultado p {
+    margin: 12px 0; /* Diminuído de 15px para 12px */
+}
+
+.resultado strong {
+    color: #ffffff;
+}
+
+.leaderboard {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px; /* Diminuído de 20px para 15px */
+}
+
+.leaderboard li {
+    font-size: 20px; /* Diminuído de 22px para 20px */
+    font-weight: bold;
+    color: #f9fafa;
+    display: flex;
+    align-items: center;
+}
+
+.leaderboard li img {
+    width: 35px; /* Diminuído de 40px para 35px */
+    height: 35px; /* Diminuído de 40px para 35px */
+    border-radius: 50%; /* Imagem redonda */
+    margin-right: 8px; /* Diminuído de 10px para 8px */
+}
+
+.regras ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.regras li {
+    margin: 8px 0; /* Diminuído de 10px para 8px */
+    font-size: 18px; /* Diminuído de 20px para 18px */
+    color: #f9fafa;
+}
+
+.link {
+    text-decoration: none;
+    color: #f9fafa;
+    font-size: 16px; /* Diminuído de 18px para 16px */
+}
+
+.user-image {
+    width: 45px; /* Diminuído de 50px para 45px */
+    height: 45px; /* Diminuído de 50px para 45px */
+    border-radius: 50%; /* Para que a imagem fique redonda */
+    margin-right: 8px; /* Diminuído de 10px para 8px */
+    vertical-align: middle; /* Alinha a imagem com o texto */
+}
+
+.user-score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; /* Diminuído de 20px para 15px */
+}

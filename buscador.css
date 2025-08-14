@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #3c5c7a, #224363, #133b61);
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    overflow-y: auto; /* Controla a rolagem no corpo da página */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao topo da página */
+}
+
+.form-container {
+    display: flex;
+    justify-content: center; /* Centraliza o formulário */
+    margin-top: 20px;
+    border-radius: 25px;
+    width: 100%; /* Ajustado para ocupar 50% da largura */
+}
+
+.form-container .form-control {
+    width: 100%;
+}
+
+.container {
+    width: 50%; /* Ajustado para ocupar 100% do espaço da .form-container */
+    padding: 20px;
+    background: linear-gradient(to right, #383d41, #181b1d, #000000);
+    border-radius: 25px;
+    margin-bottom: 20px; /* Adiciona um espaçamento na parte inferior */
+    position: relative; /* O contêiner é relativo ao fluxo normal da página */
+}
+
+.search-bar {
+    border-radius: 25px 0 0 35px !important;
+    border: 0 !important;
+    color: white !important;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px;
+}
+
+.suggestions h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    height: 130px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.followers {
+    font-size: 15px;
+    color: #b3b3b3;
+}
+
+.follow-btn {
+    background-color: #1f8ef1;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 20px;
+    transition: background-color 0.3s;
+}
+
+.unfollow-btn {
+    background-color: #f70707;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+    margin-left: 20px;
+    transition: background-color 0.3s;
+}
+
+.follow-btn:hover {
+    background-color:  #73b5ee;
+}
+
+.unfollow-btn:hover {
+    background-color: #f07474;
+}
+
+.card-footer {
+    border-radius: 0 0 15px 15px !important;
+    border-top: 0 !important;
+}

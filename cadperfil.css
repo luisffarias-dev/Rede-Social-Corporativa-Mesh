@@ -1,0 +1,127 @@
+/* Estilização do corpo e estrutura principal */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to right, #3c5c7a, #224363, #133b61);
+  font-family: 'Arial', sans-serif;
+  color: #f0f0f0; /* Cor do texto */
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto; /* Ajusta a margem para criar espaço ao redor */
+  background:linear-gradient(to right, #383d41, #181b1d, #000000);; /* Fundo semi-transparente para o contêiner */
+  border-radius: 10px; /* Borda arredondada para dar uma aparência de caixa */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra à caixa */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borda semi-transparente para destacar a caixa */
+}
+
+.intro h1 {
+  text-align: center;
+  padding: 20px;
+  color: #f0f0f0;
+}
+
+/* Estilização dos inputs e selects */
+.input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+ /* Texto branco dentro dos inputs */
+}
+
+.input::placeholder {
+  color: #000000; /* Placeholder em branco */
+}
+
+select {
+  color: #000000; /* Texto branco no select */
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilos de layout */
+.grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gridCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3c5c7a;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #224363;
+}
+
+/* Estilo do botão escolher arquivo */
+.file-input {
+  display: none; /* Esconde o input de arquivo */
+}
+
+.file-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3c5c7a;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #224363;
+}
+
+/* Estilo dos ícones das redes sociais */
+.social-links img {
+  width: 30px; /* Tamanho do ícone */
+  height: 30px; /* Tamanho do ícone */
+  margin-right: 10px; /* Espaçamento entre ícones */
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  padding: 20px;
+  
+  color: #f0f0f0;
+}
+
+
+
+.btn-sub{
+  background: linear-gradient(to right,#000000,#181b1d,#383d41 );
+}

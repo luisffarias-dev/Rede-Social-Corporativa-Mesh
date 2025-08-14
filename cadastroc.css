@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    overflow: auto; /* Permite rolagem se necessário */
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+button {
+    font-size: 9pt; /* Diminui o tamanho da fonte */
+    width: 25%; /* Aumenta a largura do botão */
+    padding: 3px 0; /* Diminui o padding */
+    margin: 0px; /* Diminui a margem entre os botões */
+    border: none;
+    border-radius: 6px; /* Diminui o arredondamento */
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700; /* Mantém o peso da fonte */
+    letter-spacing: 1px; /* Mantém o espaçamento das letras */
+    color: #e6f3ff;
+    background: #0f2d49;
+    cursor: pointer;
+}
+
+.main_login {
+    width: 100vw;
+    height: 100vh;
+    background: #e6f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_login {
+    width: 50vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left_login > h1 {
+    font-size: 1vw; /* Diminui o tamanho da fonte */
+    color: #2a5a86;
+}
+
+img {
+    border-radius: 50px;
+    width: 30vw; /* Diminui a largura da imagem */
+}
+
+.right_login {
+    width: 50vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_login {
+    width: 60%; /* Mantém a largura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 20px; /* Diminui o padding */
+    background: #133b61;
+    border-radius: 15px; /* Diminui o arredondamento */
+    box-shadow: 0px 5px 20px #00000056; /* Diminui a sombra */
+}
+
+.card_login > h1 {
+    color: #e6f3ff;
+    font-weight: 700;
+    margin: 0;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px; /* Diminua para 5px ou menos */
+}
+
+.textfield > input, 
+.textfield > select {
+    width: 100%;
+    border: none;
+    border-radius: 6px; /* Diminui o arredondamento */
+    padding: 8px; /* Diminui o padding */
+    background: #2a5a86;
+    color: #f0ffffde;
+    font-size: 9pt; /* Diminui o tamanho da fonte */
+    box-shadow: 0px 3px 15px #00000056; /* Diminui a sombra */
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Estilo para o select */
+.textfield > select {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23e6f3ff"><path d="M7 10l5 5 5-5H7z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center; /* Mantém a posição da seta */
+    background-size: 10px; /* Diminui o tamanho da seta */
+    padding-right: 25px; /* Mantém o espaço para a seta */
+}
+
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 0px; /* Mantém a margem inferior */
+}
+
+.textfield > input::placeholder {
+    color: #f0ffff94;
+}
+
+.textfield a {
+    color: red;
+    visibility: hidden;
+}
+
+.textfield.error a {
+    color: red;
+    visibility: visible;
+}
+
+.btn_login {
+    width: 100%;
+    padding: 10px 0; /* Diminui o padding */
+    margin: 5px; /* Diminui a margem entre os botões */
+    border: none;
+    border-radius: 6px; /* Diminui o arredondamento */
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700; /* Mantém o peso da fonte */
+    letter-spacing: 1px; /* Mantém o espaçamento das letras */
+    color: #0f2d49;
+    background: #e6f3ff;
+    cursor: pointer;
+}
+
+a {
+    color: #e6f3ff;
+}
+
+@media only screen and (max-width: 950px) {
+    .card_login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main_login {
+        flex-direction: column;
+    }
+    .left_login > h1 {
+        display: none;
+    }
+    .left_login {
+        width: 100%;
+        height: auto;
+    }
+    .right_login {
+        width: 100%;
+        height: auto;
+    }
+    .left_login > img {
+        width: 30vw; /* Diminui a largura da imagem */
+    }
+    .card_login {
+        width: 90%;
+    }
+}

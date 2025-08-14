@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: transparent;
+
+    
+}
+
+main {
+    padding: 20px;
+    position: fixed;
+    z-index: 11;
+    padding-left: calc(82px + 20px);
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    height: 100vh;
+    border-radius: 0px 1px 15px 0px;
+    position: relative;
+    transition: all .5s;
+    min-width: 82px;
+    z-index: 2;
+   
+}
+
+#sidebar_content {
+    padding: 12px;
+}
+
+#user {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o avatar e o texto */
+    margin-bottom: 24px;
+}
+
+#user_avatar {
+    width: 70px;
+    height: 70px;
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-radius: 50%;
+    margin-right: 10px; /* Espaço entre a imagem e o nome */
+    flex-shrink: 0; /* Garante que a imagem não encolha */
+}
+
+#user_infos {
+    display: flex;
+    flex-direction: column; /* Mantém os itens do nome empilhados */
+    justify-content: center;
+    text-align: left;
+    white-space: nowrap; /* Impede quebra de linha */
+    font-size: 35px;
+    color: #ffffff;
+}
+
+
+
+#user_infos span:last-child {
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+#side_items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.side-item {
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.side-item.active {
+    background-color: #ffffff;
+}
+.side-item.active:hover {
+    background-color: #525252;
+}
+
+.side-item:hover:not(.active),
+#logout_btn:hover {
+    background-color: #b8b8b8;
+}
+
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fffcfc;
+}
+
+.side-item.active a {
+    color: #030303;
+}
+
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+   
+}
+
+#logout {
+    border-top: 1px solid #e3e9f7;
+    padding: 5px;
+   
+}
+
+#logout_btn {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    
+}
+
+#open_btn {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #000000;
+    color: #e3e9f7;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#open_btn_icon {
+    transition: transform .3s ease;
+}
+
+.open-sidebar #open_btn_icon {
+    transform: rotate(180deg);
+}
+
+.item-description {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    transition: width .6s;
+    height: 0px;
+}
+
+#sidebar.open-sidebar {
+    min-width: 15%;
+}
+
+#sidebar.open-sidebar .item-description {
+    width: 150px;
+    height: auto;
+    font-size: 18px;
+    color: #000000;
+}
+
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start;
+    gap: 14px;
+}

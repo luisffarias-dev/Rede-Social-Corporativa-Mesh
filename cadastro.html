@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Mesh.ico" type="image/x-icon">
+    <link id="folha01" rel="stylesheet" href="cadastroc.css">
+    <link id="folha02" rel="stylesheet" href="cadastroe.css" disabled>
+    <title>Login</title>
+</head>
+<body>
+    <div class="main_login">
+        <div class="right_login">
+            <div class="card_login">
+                <h1>CADASTRO</h1>
+                <form id="form" class="form" method="post" action="cadastro.php">
+                    <div class="textfield">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" name="nome" placeholder="Digite o seu nome" id="nome">
+                        <a>Mensagem</a>
+                    </div>
+                    <div class="textfield">
+                        <label for="e-mail">E-mail:</label>
+                        <input type="email" name="email" placeholder="Digite o seu e-mail" id="email">
+                        <a>Mensagem</a>
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" placeholder="Digite a sua senha" id="senha">
+                        <a>Mensagem</a>
+                    </div>
+                    <div class="textfield">
+                        <label for="senhaconf">Confirme a senha:</label>
+                        <input type="password" name="confsenha" placeholder="Digite a sua senha novamente" id="confsenha">
+                        <a>Mensagem</a>
+                    </div>
+                    <div class="textfield">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" placeholder="Digite sua cidade" id="cidade">
+                        <a>Mensagem</a>
+                    </div>
+                    <div class="textfield">
+                        <label for="estado_trabalho">Estado onde trabalha:</label>
+                        <select name="estado_trabalho" id="estado_trabalho">
+                            <option selected disabled>Escolha o estado onde trabalha</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                        <a>Mensagem</a>
+                    </div>
+                    <button type="submit" class="btn_login">Cadastrar</button>
+                    <a href="login.html">Já tem uma conta</a>
+                </form>
+            </div>
+        </div>
+        <div class="left_login">
+            <h1>Cadastre-se<br>para fazer parte da melhor rede social corporativa</h1>
+            <img src="src/images/Mesh.png" alt="trabalho">
+            <button onclick="alternarEstilo()">☀/☾</button>
+        </div>
+    </div>
+    <script>
+        
+        // Função para alternar entre dois estilos CSS (claro/escuro)
+        function alternarEstilo() {
+            var estilo1 = document.getElementById('folha01');
+            var estilo2 = document.getElementById('folha02');
+
+            if (estilo1.disabled) {
+                estilo1.disabled = false;
+                estilo2.disabled = true;
+            } else {
+                estilo1.disabled = true;
+                estilo2.disabled = false;
+            }
+        }
+  
+    </script>
+</body>
+</html>
+
+

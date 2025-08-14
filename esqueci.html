@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Mesh.ico" type="image/x-icon">
+    <link id="folha01" rel="stylesheet" href="cadastroc.css">
+    <link id="folha02" rel="stylesheet" href="cadastroe.css" disabled>
+    <title>Login</title>
+</head>
+<body>
+    <div class="main_login">
+        <div class="right_login">
+            <div class="card_login">
+                <h1>Recuperar Senha</h1>
+                <form id="form" class="form" method="POST" action="esqueci.php">
+                    
+                    <div class="textfield">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" placeholder="Digite o seu e-mail" id="email" required>
+                        <a class="error-message"></a>
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" placeholder="Digite a sua nova senha" id="senha" required>
+                        <a class="error-message"></a>
+                    </div>
+                    <div class="textfield">
+                        <label for="confsenha">Confirme a senha:</label>
+                        <input type="password" name="confsenha" placeholder="Confirme a senha" id="confsenha" required>
+                        <a class="error-message"></a>
+                    </div>
+                     <input type="submit" value="Registrar Nova Senha" class="btn_login" onclick="document.form1.action='esqueci.php'">
+                    <a href="login.html">Voltar ao Login</a>
+                </form>
+            </div>
+        </div>
+        <div class="left_login">
+            <h1>Cadastre-se<br>para fazer parte da melhor rede social corporativa</h1>
+            <img src="src/images/Mesh.png" alt="trabalho">
+            <button onclick="alternarEstilo()">☀/☾</button>
+        </div>
+    </div>
+    <script>
+    function alternarEstilo() {
+            var estilo1 = document.getElementById('folha01');
+            var estilo2 = document.getElementById('folha02');
+
+            if (estilo1.disabled) {
+                estilo1.disabled = false;
+                estilo2.disabled = true;
+            } else {
+                estilo1.disabled = true;
+                estilo2.disabled = false;
+            }
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {  
+  background: linear-gradient(to right, #3c5c7a, #224363, #133b61);
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+.main {
+  width: 50%; /* Ajustado para 50% */
+  margin: 0; /* Remove a margem */
+}
+
+
+header{
+  padding: 10px;
+  font-size: 18pt;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  background: linear-gradient(to right, #3c5c7a, #224363, #133b61);
+}
+
+#back{
+  position: absolute;
+  left: 90px; 
+  color: #d1d1d1;
+}
+
+a{color: #d1d1d1;}
+
+h6{
+  font-size: 18pt;
+  display: flex;
+  justify-content: center;
+}
+
+div.newPost {
+  position: fixed;
+  bottom: 0;
+  left: 25%;
+  height: 200px; 
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px; /* Ajuste para começar mais próximo do topo */
+  margin-bottom: 20px;
+  padding: 25px;
+  background: linear-gradient(to right, #383d41, #181b1d, #000000);
+  border-radius: 10px;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.4);
+}
+
+div#out{
+  background: linear-gradient(to right, #3c5c7a, #224363, #133b61);
+  width: 100%;
+  height: 28px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+div.newPost div.infoUser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.newPost div.infoUser div.imgUser,
+div.imgUserPost {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #333;
+}
+
+div.newPost div.infoUser div.imgUser img,
+div.imgUserPost img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.newPost div.infoUser strong {
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+div.newPost form.formPost {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div.newPost form.formPost textarea {
+  background: #b7d6fa2a;
+  margin: 15px 0;
+  padding: 25px;
+  border-radius: 10px;
+  resize: none;
+  border: 0;
+  height: 90px;
+  outline: none;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid #ffffff3a;
+}
+
+div.newPost form.formPost textarea:focus {
+  border: 2px solid #23a0ff;
+}
+
+div.newPost form.formPost div.iconsAndButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.newPost form.formPost div.iconsAndButton div.icons {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.newPost form.formPost div.iconsAndButton div.icons button {
+  outline: none;
+  margin-right: 15px;
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.newPost form.formPost div.iconsAndButton input.btnSubmitForm {
+  background: #ffffff;
+  padding: 10px 50px;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+div.newPost form.formPost div.iconsAndButton button.btnSubmitForm:hover {
+  background: rgb(255, 255, 255);
+}
+
+ul.posts li.post {
+  margin-bottom: 0;
+  background: #fff;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 1px;
+  padding: 25px;
+  box-shadow: 3px 0 3px rgba(0, 0, 0, 0.05);
+  margin: auto;
+}
+
+
+ul.posts li.post div.infoUserPost{
+  margin-left: 10px;
+}
+
+div.imgname> strong {
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+div.infoUserPost> p {
+  color: #d1d1d1;
+  font-size: 12px;
+}
+
+div.infoUserPost{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.imgname{
+  display: flex;
+  align-items: center;
+}
+
+ul.posts li.post > p {
+  width: 50%;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #727272;
+}
+
+ul.posts li.post div.actionBtnPost {
+  display: flex;
+  align-items: center;
+}
+
+ul.posts li.post div.actionBtnPost button.filesPost {
+  padding: 5px 20px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  margin-right: 10px;
+  border-radius: 0;
+  cursor: pointer;
+  color: #000000;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+ul.posts li.post div.actionBtnPost button.filesPost img {
+  margin-right: 5px;
+}
+
+.like {
+  background: #ff6b6b;
+}
+
+.like:hover {
+  background: rgb(248, 75, 75);
+}
+
+.comment {
+  background: #ffb223;
+}
+
+.comment:hover {
+  background: #fd8f11;
+}
+
+.share {
+  background: #23a0ff;
+}
+
+.share:hover {
+  background: #1180ff;
+}
+
+.midia input {
+  display: none;
+}
+
+.midia img {
+  cursor: pointer;
+}
+
+.post-image {
+  max-width: 650px;
+  border-radius: 20px;
+}
+
+.filesPost img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+div#allcont {
+  width: 50%; /* Ajustado para 50% */
+  margin: 0;
+}
+
+div#post {
+  outline: none;
+  margin-right: 15px;
+  border: 0;
+  background: linear-gradient(to right, #383d41, #181b1d, #000000);
+  border-radius: 10px;
+  width: 100%;
+  padding: 25px;
+  color: #f8f8f8;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.4);
+}
+
+div#postback{
+  margin: 0;
+  width: 100%;
+  padding-bottom: 220px;
+}
+
+div#contp {
+  background: #b7d6fa2a;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 10px;
+  resize: none;
+  border: 0;
+  outline: none;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid #ffffff3a;
+}
+
+.postImage {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.postImage img {
+  border-radius: 15px;
+  max-width: 90%;
+  margin: 15px 0;
+}
+
+div.nameAndHour > p {
+  font-size: 10pt;
+}
+
+div.linha {
+  background: #d3d3d3c7;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 15px;
+}
+
+.filesPost {
+  border-radius: 10px;
+  padding: 5px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;  
+  cursor: pointer;
+  color: white;
+}
+
+.actionBtnPost {
+  display: flex;
+  align-items: center;
+}
+
+.filesPost p {
+  padding: 0 5px;
+}
+
+i{
+  z-index: 15;
+  
+}

@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow-y: auto; /* Permite rolagem */
+  background: linear-gradient(to right, #3c5c7a, #224363, #133b61);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; 
+  position: relative; /* Mude para relative */
+  z-index: 11;
+  margin-left: 25%;
+  border-radius: 0px 20px 0px 20px;
+}
+
+.profile-card {
+    background: linear-gradient(to right, #383d41, #181b1d, #000000);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.username {
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.followers {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.followers img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.followers span {
+    font-size: 14px;
+}
+
+.profile-pic img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.edit-profile {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+.teste{
+  color: #ffffff;
+  background-color: #ffffff;
+
+}
+
+.edit-profile button {
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-profile .instagram-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    flex-direction: row;
+}
+
+.edit-profile .instagram-link:first-child {
+    margin-left: 0;
+}
+
+.menu {
+    margin-top: 20px;
+    border-bottom: 1px solid #333;
+    color: #ffffff;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.menu li {
+    color: #888;
+    cursor: pointer;
+}
+
+.menu li.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.threads {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.threads button {
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icones {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icones li {
+    display: inline-block; /* Coloca os ícones lado a lado */
+    margin-right: 10px; /* Adiciona espaçamento entre os ícones */
+}
+
+.icones li:last-child {
+    margin-right: 0; /* Remove o espaçamento à direita do último ícone */
+}
+
+.botao-estilizado {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    border: none;
+}
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  li {
+    list-style: none;
+  }
+  
+  header {
+    width: 100%;
+    height: 50px;
+    background: #133b61;
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Espaçamento entre os elementos */
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .main {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  div.newPost {
+    height: 240px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 25px;
+    background: linear-gradient(to right, #383d41, #181b1d, #000000);
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  div.newPost div.infoUser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  
+
+  
+  div.newPost div.infoUser strong {
+    font-size: 16px;
+    color: #23a0ff;
+    margin-left: 10px;
+  }
+  
+  div.newPost form.formPost {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  div.newPost form.formPost textarea {
+    background: #b7d6fa2a;
+    margin: 15px 0;
+    padding: 25px;
+    border-radius: 10px;
+    resize: none;
+    border: 0;
+    height: 90px;
+    outline: none;
+    font-weight: bold;
+    color: #727272;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #ffffff3a;
+  }
+  
+  div.newPost form.formPost textarea:focus {
+    border: 2px solid #23a0ff;
+  }
+  
+  div.newPost form.formPost div.iconsAndButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  div.newPost form.formPost div.iconsAndButton div.icons {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  div.newPost form.formPost div.iconsAndButton div.icons button {
+    outline: none;
+    margin-right: 15px;
+    border: 0;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div.newPost form.formPost div.iconsAndButton input.btnSubmitForm {
+    background: #23a0ff;
+    padding: 10px 50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    transition: background 0.2s;
+  }
+  
+  div.newPost form.formPost div.iconsAndButton button.btnSubmitForm:hover {
+    background: rgb(8, 138, 236);
+  }
+  
+  ul.posts li.post {
+    margin-bottom: 0; /* Remove margem entre os posts */
+    background: #fff;
+    width: 100%; /* Responsivo para telas menores */
+    max-width: 600px; /* Limita a largura dos posts */
+    border-radius: 1px;
+    padding: 25px;
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.05);
+    margin: auto; /* Centraliza os posts */
+  }
+  
+  ul.posts li.post div.infoUserPost {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  ul.posts li.post > p {
+    width: 50%;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #727272;
+  }
+  
+  ul.posts li.post div.actionBtnPost {
+    display: flex;
+    align-items: center;
+  }
+  
+  ul.posts li.post div.actionBtnPost button.filesPost {
+    padding: 5px 20px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    margin-right: 10px;
+    border-radius: 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  
+  ul.posts li.post div.actionBtnPost button.filesPost img {
+    margin-right: 5px;
+  }
+  
+  .like, .excluir {
+    background: #ff6b6b;
+  }
+  
+  .like:hover, .excluir:hover {
+    background: rgb(248, 75, 75);
+  }
+  
+  .share {
+    background: #23a0ff;
+  }
+  
+  .share:hover {
+    background: rgb(8, 141, 241);
+  }
+  
+  .midia input {
+    display: none;
+  }
+  
+  .midia img {
+    cursor: pointer;
+  }
+  
+  .post-image {
+    max-width: 650px;
+    border-radius: 20px;
+  }
+  
+  .filesPost img {
+    width: 20px; /* Define a largura */
+    height: 20px; /* Define a altura */
+    object-fit: contain; /* Ajusta o conteúdo da imagem dentro do contêiner */
+  }
+  
+
+  
+  div#post{
+    outline: none;
+    margin-right: 15px;
+    border: 0;
+    background: linear-gradient(to right, #383d41, #181b1d, #000000);
+    border-radius: 10px;
+    width: 100%;
+    padding: 25px;
+    color: #23a0ff;
+    margin: 0;
+    margin-bottom: 20px;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  div#contp{
+    background: #b7d6fa2a;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #ffffff3a;
+  }
+  
+  .postImage{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .postImage img{
+    border-radius: 15px;
+  }
+  
+  div.nameAndHour > p{
+    font-size: 10pt;
+  }
+  
+  div.linha {
+    background: #d3d3d3c7;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 15px;
+  }
+  
+  .filesPost{
+    border-radius: 10px;
+    padding: 5px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;  
+    cursor: pointer;
+    color: white;
+  }
+  
+  .actionBtnPost{
+    display: flex;
+    align-items: center;
+  }
+  
+  .filesPost p{
+    padding: 0 5px;
+  }
+  

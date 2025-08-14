@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #3c5c7a, #224363, #133b61);
+    overflow-y: auto; /* Permite rolagem na página principal */
+}
+
+body {
+    flex: 1; /* O body vai se expandir para ocupar o restante da tela */
+    overflow-y: auto; /* Habilita a rolagem no eixo vertical */
+}
+
+/* Cabeçalho fixo */
+.meuIframeheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 8%; /* Altura do cabeçalho */
+    border: none;
+    z-index: 9;
+    background-color: #224363;
+}
+
+/* Sidebar fixa */
+.meuIframe {
+    position: fixed;
+    top: 8%; /* Inicia abaixo do cabeçalho */
+    left: 0;
+    width: 18%; /* Largura da sidebar */
+    height: calc(100% - 8%); /* Preenche o restante da página */
+    border: none;
+    z-index: 12;
+    background-color: #3c5c7a;
+}
+
+/* Área do chat */
+.meuIframechat {
+    position: absolute;
+    top: 8%; /* Deixa espaço para o cabeçalho */
+    margin-left: 18%; /* Deixa espaço para a sidebar */
+    width: 80%; /* Preenche o restante da largura */
+    height: calc(100% - 8%); /* Preenche a altura restante */
+    border: none;
+    z-index: 11;
+    border
+}
